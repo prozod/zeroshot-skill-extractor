@@ -76,4 +76,4 @@ I'm using `pipreqs` to get rid of all the fluff dependencies, whenever you insta
 ```
 
 ## Short demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/meRzuvFx1VY?si=ypkcVru0Y0aTep2X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Watch the demo]](https://www.youtube.com/watch?v=meRzuvFx1VY&feature=youtu.be)
