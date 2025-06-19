@@ -76,4 +76,4 @@ I'm using `pipreqs` to get rid of all the fluff dependencies, whenever you insta
 ```
 
 ## Short demo
-[![Watch the demo]](https://www.youtube.com/watch?v=meRzuvFx1VY&feature=youtu.be)
+[![Watch the demo](https://img.youtube.com/vi/meRzuvFx1VY/0.jpg)](https://www.youtube.com/watch?v=meRzuvFx1VY)
