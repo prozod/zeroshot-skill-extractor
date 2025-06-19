@@ -1,0 +1,478 @@
+premise,hypothesis,label
+"Experienced with Terraform, AWS, and Docker","Candidate has cloud skills",entailment
+"Skilled in HTML, CSS, and React","Candidate has backend skills",contradiction
+"Worked with SQL and PostgreSQL","Candidate has database knowledge",entailment
+"Implemented CI/CD pipelines with Jenkins and GitHub Actions for microservices deployment.","This candidate works in DevOps.",entailment
+"Containerized applications using Docker and managed clusters via Kubernetes on AWS EKS.","This candidate is skilled in container orchestration and cloud.",entailment
+"Designed infrastructure as code using Terraform to provision AWS EC2, S3, RDS resources.","This candidate is experienced in cloud infrastructure.",entailment
+"Led frontend development with React and TypeScript, built reusable components.","This candidate is a frontend developer.",entailment
+"Built RESTful APIs and GraphQL endpoints using Node.js with Express.js.","This candidate works in backend development.",entailment
+"Transformed a Django monolith to FastAPI microservices for performance.","This candidate is backend engineer.",entailment
+"Configured Prometheus, Grafana dashboards for metrics and logs.","This candidate is skilled in observability.",entailment
+"Set up ELK stack (Elasticsearch, Logstash, Kibana) for log aggregation.","This candidate handles log management.",entailment
+"Built asynchronous task queues with Celery backed by RabbitMQ.","This candidate develops distributed systems.",entailment
+"Created data pipelines in Apache Airflow and ETL flows to Snowflake.","This candidate works in data engineering.",entailment
+"Generated BI dashboards using Power BI and Tableau for executive reporting.","This candidate is a BI analyst.",entailment
+"Secured REST APIs using OAuth2, JWT tokens, and RBAC.","This candidate specializes in API security.",entailment
+"Developed microservices architecture in microservices using Java Spring Boot.","This candidate is a backend developer.",entailment
+"Automated infrastructure provisioning with Ansible and CI/CD pipelines.","This candidate works in DevOps.",entailment
+"Implemented serverless functions using AWS Lambda to process S3 events.","This candidate has cloud function experience.",entailment
+"Worked with Redis and PostgreSQL to optimize read/write performance.","This candidate is a database engineer.",entailment
+"Applied Agile-Scrum methodologies and managed sprints using JIRA.","This candidate works in Agile project management.",entailment
+"Built developer portal using Backstage to standardize microservice onboarding.","This candidate focuses on developer experience tooling.",entailment
+"Wrote unit tests with pytest and embedded coverage thresholds.","This candidate practices test‑driven development.",entailment
+"Led inner source initiatives to share code across multiple teams.","This candidate advocates collaborative engineering.",entailment
+"Experimenting in Rust to write performant systems utilities.","This candidate codes in systems programming languages.",entailment
+"Explored LLM orchestration using LangChain for chatbot development.","This candidate works with LLM pipelines.",entailment
+"I play guitar in a band every weekend.","This candidate is a backend developer.",contradiction
+"Organizes charity events using Excel spreadsheets.","This candidate works in cloud engineering.",neutral
+"Loves photography and travels to remote locations for inspiration.","This candidate specializes in data science.",contradiction
+"Built and deployed containerized applications using Docker and Kubernetes on GCP.","This candidate is skilled in container orchestration and cloud.",entailment
+"Developed a distributed system using Apache Kafka for real-time event streaming.","This candidate works in distributed systems.",entailment
+"Wrote automation scripts using Python and Bash to streamline DevOps tasks.","This candidate is experienced in DevOps scripting.",entailment
+"Configured and monitored AWS CloudWatch for system metrics.","This candidate is skilled in cloud monitoring.",entailment
+"Trained deep learning models with PyTorch for image classification.","This candidate works in machine learning.",entailment
+"Created a recommendation engine using collaborative filtering.","This candidate is a data scientist.",entailment
+"Migrated legacy systems to a microservices architecture using Go.","This candidate is a software engineer.",entailment
+"Integrated CI/CD pipelines using CircleCI for test automation.","This candidate is experienced in CI/CD.",entailment
+"Built a real-time dashboard with WebSocket and D3.js.","This candidate works in frontend development.",entailment
+"Secured web applications using HTTPS, CORS, and CSP policies.","This candidate is skilled in web security.",entailment
+"Volunteered at an animal shelter on weekends.","This candidate works in cloud computing.",contradiction
+"Paints landscapes and exhibits artwork in local galleries.","This candidate is a DevOps engineer.",contradiction
+"Manages a small bakery and creates new pastry recipes.","This candidate specializes in backend development.",contradiction
+"Trained as a classical pianist and performs recitals.","This candidate is a machine learning engineer.",contradiction
+"Writes poetry and leads a local writer's group.","This candidate is experienced in microservices.",contradiction
+"Organized neighborhood watch programs and community events.","This candidate is a frontend developer.",contradiction
+"Enjoys mountain biking and wilderness survival.","This candidate builds distributed systems.",neutral
+"Practices meditation and mindfulness daily.","This candidate is a database administrator.",neutral
+"Travels frequently to study indigenous languages.","This candidate is skilled in cloud infrastructure.",neutral
+"Makes documentary films on social justice topics.","This candidate works in software engineering.",neutral
+
+"Built RESTful APIs using Django and PostgreSQL","The candidate has backend development experience",entailment
+"Designed responsive UIs with React and Tailwind CSS","The candidate has frontend development skills",entailment
+"Created data pipelines with Apache Airflow and Snowflake","The candidate has data engineering experience",entailment
+"Implemented server-side logic with Node.js and MongoDB","The candidate has backend experience",entailment
+"Managed cloud infrastructure using Terraform and AWS","The candidate worked in a DevOps role",entailment
+"Used D3.js to build interactive visualizations","The candidate has frontend development experience",entailment
+"Developed microservices with Spring Boot and Kafka","The candidate has backend development experience",entailment
+"Processed large datasets with PySpark and Hive","The candidate has experience in data engineering",entailment
+"Deployed containerized apps with Docker and Kubernetes","The candidate has DevOps experience",entailment
+"Maintained MySQL databases and optimized queries","The candidate has backend development experience",entailment
+"Designed wireframes and mockups with Figma","The candidate is skilled in UI/UX design",entailment
+"Used Redux to manage application state in React apps","The candidate has frontend development experience",entailment
+"Wrote tests for APIs using pytest and Postman","The candidate has backend testing experience",entailment
+"Scraped websites using BeautifulSoup and Selenium","The candidate has experience in data engineering",entailment
+"Developed APIs with Flask and deployed them on Heroku","The candidate has backend experience",entailment
+"Built dashboards with Tableau and connected to Redshift","The candidate has data engineering experience",entailment
+
+"Designed UI animations with After Effects","The candidate has backend experience",contradiction
+"Cleaned datasets using pandas","The candidate has frontend development skills",contradiction
+"Managed email campaigns and CRM workflows","The candidate has backend experience",contradiction
+"Recorded podcast episodes using Adobe Audition","The candidate has data engineering skills",contradiction
+"Edited photos in Lightroom for social media","The candidate has frontend development experience",contradiction
+"Wrote SEO content for blogs and landing pages","The candidate is skilled in backend systems",contradiction
+"Handled event planning logistics","The candidate has experience in cloud infrastructure",contradiction
+"Created flyers and brochures in Canva","The candidate is a DevOps engineer",contradiction
+"Built spreadsheets to track inventory","The candidate is a web developer",contradiction
+"Analyzed sales trends using Excel","The candidate is a software engineer",contradiction
+
+"Built a backend with Node.js and Express","The candidate has frontend development experience",neutral
+"Styled components using SCSS and CSS modules","The candidate has backend experience",neutral
+"Processed logs using Fluentd and Elasticsearch","The candidate has data science experience",neutral
+"Created a chatbot with Rasa and spaCy","The candidate has frontend experience",neutral
+"Used Apache Beam for streaming ETL","The candidate has UI/UX design experience",neutral
+"Managed authentication with OAuth2 and JWT","The candidate is a mobile app developer",neutral
+"Created REST APIs in Go","The candidate has experience with graphic design",neutral
+"Worked with PostgreSQL and pgAdmin","The candidate is a content writer",neutral
+"Developed CI/CD pipelines using Jenkins","The candidate has customer support experience",neutral
+"Tested frontend components using Jest","The candidate is a backend developer",neutral
+
+"I love to build games in Godot and Unreal Engine.","The candidate is a game developer",entailment
+"I enjoy 2D engines and 3D games using Game Engines like Hazel and OpenGL.","The candidate is a game developer or computer graphics lover",entailment
+"I love playing video games.","The candidate is a game developer or computer graphics lover",neutral
+"I built board games my entire life, mostly wooden ones.","The candidate is a game developer or computer graphics lover",contradiction
+"Designed a 3D level using Unity engine for a mobile platform", "Unity", entailment
+"Implemented physics-based character movements using Unreal Engine Blueprints", "Unreal Engine", entailment
+"Created complex animation graphs for characters using Unity Animator", "Unity Animator", entailment
+"Used Blender for asset modeling and rigging of characters", "Blender", entailment
+"Programmed networked multiplayer features with Photon SDK", "Photon SDK", entailment
+"Developed custom shaders using HLSL and Unity Shader Graph", "Shader programming", entailment
+"Used Git for version control across a distributed game dev team", "Git", entailment
+"Authored game design documents and mechanics specifications", "Game Design", entailment
+"Built an ECS architecture from scratch to manage in-game entities", "Entity Component System", entailment
+"Created pixel art using Aseprite for 2D game sprites", "Aseprite", entailment
+"Implemented turn-based combat mechanics in Godot", "Godot", entailment
+"Collaborated with composers for dynamic music integration", "Wwise", entailment
+"Debugged memory leaks and performance issues on PlayStation 5 dev kit", "Console Optimization", entailment
+"Deployed game builds to Steam using Steamworks SDK", "Steamworks SDK", entailment
+"Designed UX and UI with player feedback loops in mind", "UI/UX", entailment
+"Used Spine for character animation in a 2D mobile game", "Spine", entailment
+"Maintained build automation pipeline with Jenkins and Unity Cloud Build", "CI/CD", entailment
+"Created procedural terrain generation using Perlin noise", "Procedural Generation", entailment
+"Implemented in-game purchases and ads with Unity Ads SDK", "Monetization", entailment
+"Worked with Lua scripting to define enemy behaviors", "Lua", entailment
+
+"Designed a 3D level using Unity engine for a mobile platform", "Data engineering", contradiction
+"Implemented physics-based character movements using Unreal Engine Blueprints", "Frontend development", contradiction
+"Used Blender for asset modeling and rigging of characters", "Natural Language Processing", contradiction
+"Programmed networked multiplayer features with Photon SDK", "DevOps", contradiction
+"Created pixel art using Aseprite for 2D game sprites", "Docker", contradiction
+"Authored game design documents and mechanics specifications", "CI/CD", neutral
+"Built an ECS architecture from scratch to manage in-game entities", "Backend development", neutral
+"Collaborated with composers for dynamic music integration", "Audio engineering", entailment
+"Debugged memory leaks and performance issues on PlayStation 5 dev kit", "Linux kernel internals", contradiction
+"Deployed game builds to Steam using Steamworks SDK", "Cloud Computing", neutral
+
+"Built and deployed RESTful APIs using Spring Boot and PostgreSQL","Knows Spring Boot",entailment
+"Built and deployed RESTful APIs using Spring Boot and PostgreSQL","Knows Django",contradiction
+"Built and deployed RESTful APIs using Spring Boot and PostgreSQL","Has experience with microservices",entailment
+"Developed responsive UIs with Vue.js, Sass, and REST API integrations","Knows Vue.js",entailment
+"Developed responsive UIs with Vue.js, Sass, and REST API integrations","Knows React",neutral
+"Developed responsive UIs with Vue.js, Sass, and REST API integrations","Skilled in UI/UX design",entailment
+"Managed infrastructure with Terraform and Kubernetes","Knows Kubernetes",entailment
+"Managed infrastructure with Terraform and Kubernetes","Knows Jenkins",neutral
+"Managed infrastructure with Terraform and Kubernetes","Knows Terraform",entailment
+"Wrote PySpark jobs for large-scale data ingestion on EMR","Knows PySpark",entailment
+"Wrote PySpark jobs for large-scale data ingestion on EMR","Familiar with Scala",neutral
+"Wrote PySpark jobs for large-scale data ingestion on EMR","Knows data lakes",entailment
+"Designed experiments and trained BERT-based NER models","Knows NLP",entailment
+"Designed experiments and trained BERT-based NER models","Knows computer vision",contradiction
+"Designed experiments and trained BERT-based NER models","Familiar with PyTorch",entailment
+"Monitored CI/CD pipelines using GitLab and Prometheus","Knows GitLab CI",entailment
+"Monitored CI/CD pipelines using GitLab and Prometheus","Familiar with Prometheus",entailment
+"Monitored CI/CD pipelines using GitLab and Prometheus","Knows AWS ECS",neutral
+"Refactored legacy codebase written in Java 8 for microservices architecture","Knows Java",entailment
+"Refactored legacy codebase written in Java 8 for microservices architecture","Knows Go",contradiction
+"Refactored legacy codebase written in Java 8 for microservices architecture","Experience with microservices",entailment
+"Built scalable Flask APIs and containerized them using Docker","Knows Docker",entailment
+"Built scalable Flask APIs and containerized them using Docker","Knows Flask",entailment
+"Built scalable Flask APIs and containerized them using Docker","Knows GraphQL",neutral
+"Trained CNN models for image classification using TensorFlow","Knows TensorFlow",entailment
+"Trained CNN models for image classification using TensorFlow","Knows NLP",contradiction
+"Trained CNN models for image classification using TensorFlow","Experience with computer vision",entailment
+"Deployed Node.js services to Azure Functions using CI/CD","Knows Node.js",entailment
+"Deployed Node.js services to Azure Functions using CI/CD","Knows AWS Lambda",neutral
+"Deployed Node.js services to Azure Functions using CI/CD","Familiar with Azure",entailment
+"Developed Android features using Kotlin and Jetpack Compose","Knows Android",entailment
+"Developed Android features using Kotlin and Jetpack Compose","Knows Swift",contradiction
+"Developed Android features using Kotlin and Jetpack Compose","Experience with mobile development",entailment
+"Analyzed network traffic with Wireshark and wrote Snort rules","Knows cybersecurity",entailment
+"Analyzed network traffic with Wireshark and wrote Snort rules","Knows frontend development",contradiction
+"Analyzed network traffic with Wireshark and wrote Snort rules","Familiar with intrusion detection",entailment
+"Built dashboards using Apache Superset and integrated with Redshift","Knows Superset",entailment
+"Built dashboards using Apache Superset and integrated with Redshift","Knows Tableau",neutral
+"Built dashboards using Apache Superset and integrated with Redshift","Knows data visualization",entailment
+"Implemented OAuth2-based authentication in a Django REST API","Knows OAuth2",entailment
+"Implemented OAuth2-based authentication in a Django REST API","Knows Flask",neutral
+"Implemented OAuth2-based authentication in a Django REST API","Knows authentication mechanisms",entailment
+"Developed unit and integration tests using PyTest and coverage.py","Knows PyTest",entailment
+"Developed unit and integration tests using PyTest and coverage.py","Knows testing frameworks",entailment
+"Developed unit and integration tests using PyTest and coverage.py","Familiar with unit testing",entailment
+"Wrote data pipelines in Airflow to ingest logs from S3 into Snowflake","Knows Airflow",entailment
+"Wrote data pipelines in Airflow to ingest logs from S3 into Snowflake","Knows Kafka",neutral
+"Wrote data pipelines in Airflow to ingest logs from S3 into Snowflake","Knows Snowflake",entailment
+"Optimized queries on large datasets using Presto and partitioning","Knows Presto",entailment
+"Optimized queries on large datasets using Presto and partitioning","Knows Spark SQL",neutral
+"Optimized queries on large datasets using Presto and partitioning","Has data engineering experience",entailment
+"Set up CI workflows using GitHub Actions and secrets for deployment","Knows GitHub Actions",entailment
+"Set up CI workflows using GitHub Actions and secrets for deployment","Knows Git",entailment
+"Set up CI workflows using GitHub Actions and secrets for deployment","Knows CI/CD",entailment
+"Built and deployed Helm charts for internal services on GKE","Knows Helm",entailment
+"Built and deployed Helm charts for internal services on GKE","Knows Ansible",neutral
+"Built and deployed Helm charts for internal services on GKE","Knows Kubernetes",entailment
+"Built Python CLI tools for internal developer workflows","Knows Python",entailment
+"Built Python CLI tools for internal developer workflows","Familiar with Bash scripting",neutral
+"Built Python CLI tools for internal developer workflows","Knows automation",entailment
+"Conducted load testing with JMeter and monitored API latency","Knows JMeter",entailment
+"Conducted load testing with JMeter and monitored API latency","Knows testing",entailment
+"Conducted load testing with JMeter and monitored API latency","Knows frontend development",contradiction
+"Worked on streaming data ingestion using Kafka and Flink","Knows Kafka",entailment
+"Worked on streaming data ingestion using Kafka and Flink","Knows Spark Streaming",neutral
+"Worked on streaming data ingestion using Kafka and Flink","Knows Flink",entailment
+"Managed secrets using Vault and integrated with CI/CD pipelines","Knows HashiCorp Vault",entailment
+"Managed secrets using Vault and integrated with CI/CD pipelines","Knows Docker Swarm",neutral
+"Managed secrets using Vault and integrated with CI/CD pipelines","Familiar with secrets management",entailment
+
+"Built scalable REST APIs using Spring Boot.","Knows Spring Boot",entailment
+"Built scalable REST APIs using Spring Boot.","Knows Flask",neutral
+"Built scalable REST APIs using Spring Boot.","Has no knowledge of Spring Boot",contradiction
+"Worked on microservices with Node.js and Express.","Knows Node.js",entailment
+"Worked on microservices with Node.js and Express.","Knows Django",neutral
+"Worked on microservices with Node.js and Express.","Has no knowledge of Node.js",contradiction
+"Developed interactive UIs with React and Redux.","Knows React",entailment
+"Developed interactive UIs with React and Redux.","Knows Angular",neutral
+"Developed interactive UIs with React and Redux.","Has no knowledge of React",contradiction
+"Styled components using Sass and Tailwind CSS.","Knows Tailwind CSS",entailment
+"Automated CI/CD pipelines using Jenkins and GitHub Actions.","Knows Jenkins",entailment
+"Automated CI/CD pipelines using Jenkins and GitHub Actions.","Knows Ansible",neutral
+"Managed infrastructure with Terraform and Kubernetes.","Knows Kubernetes",entailment
+"Managed infrastructure with Terraform and Kubernetes.","Has no knowledge of Kubernetes",contradiction
+"Processed data using Apache Spark and Kafka.","Knows Apache Spark",entailment
+"Processed data using Apache Spark and Kafka.","Knows Kafka",entailment
+"Processed data using Apache Spark and Kafka.","Knows Hadoop",neutral
+"Built ETL pipelines with Airflow and DBT.","Knows Airflow",entailment
+"Trained deep learning models using PyTorch and TensorFlow.","Knows PyTorch",entailment
+"Trained deep learning models using PyTorch and TensorFlow.","Knows TensorFlow",entailment
+"Trained deep learning models using PyTorch and TensorFlow.","Knows Scikit-learn",neutral
+"Implemented ML workflows with Scikit-learn and XGBoost.","Knows XGBoost",entailment
+"Developed mobile apps using Flutter and Dart.","Knows Flutter",entailment
+"Developed mobile apps using Flutter and Dart.","Knows Swift",neutral
+"Developed iOS apps with Swift and Xcode.","Knows Swift",entailment
+"Developed iOS apps with Swift and Xcode.","Has no knowledge of Swift",contradiction
+"Implemented OAuth2 and JWT authentication.","Knows OAuth2",entailment
+"Implemented OAuth2 and JWT authentication.","Knows JWT",entailment
+"Performed penetration testing using OWASP ZAP.","Knows OWASP ZAP",entailment
+"Performed penetration testing using OWASP ZAP.","Knows Metasploit",neutral
+"Wrote unit tests with JUnit and Mockito.","Knows JUnit",entailment
+"Wrote unit tests with JUnit and Mockito.","Knows Selenium",neutral
+"Performed automated testing using Cypress.","Knows Cypress",entailment
+"Worked extensively with OAuth2 in several projects.","Knows OAuth2",entailment
+"Worked extensively with FastAPI in several projects.","Has no knowledge of FastAPI",contradiction
+"Worked extensively with TensorFlow in several projects.","Knows TensorFlow",neutral
+"Worked extensively with OAuth2 in several projects.","Knows OAuth2",entailment
+"Worked extensively with Swift in several projects.","Knows Swift",neutral
+"Worked extensively with NestJS in several projects.","Knows NestJS",neutral
+"Worked extensively with Angular in several projects.","Knows Angular",neutral
+"Worked extensively with FastAPI in several projects.","Knows FastAPI",neutral
+"Worked extensively with Express.js in several projects.","Has no knowledge of Express.js",contradiction
+"Worked extensively with Docker in several projects.","Knows Docker",neutral
+"Worked extensively with Airflow in several projects.","Has no knowledge of Airflow",contradiction
+"Worked extensively with Xcode in several projects.","Knows Xcode",entailment
+"Worked extensively with Terraform in several projects.","Knows Terraform",neutral
+"Worked extensively with Cypress in several projects.","Knows Cypress",entailment
+"Worked extensively with Java in several projects.","Has no knowledge of Java",contradiction
+"Worked extensively with Kubernetes in several projects.","Knows Kubernetes",neutral
+"Worked extensively with Java in several projects.","Has no knowledge of Java",contradiction
+"Worked extensively with Apache Spark in several projects.","Has no knowledge of Apache Spark",contradiction
+"Worked extensively with C# in several projects.","Knows C#",neutral
+"Worked extensively with Cypress in several projects.","Has no knowledge of Cypress",contradiction
+"Worked extensively with Swift in several projects.","Has no knowledge of Swift",contradiction
+"Worked extensively with Go in several projects.","Knows Go",entailment
+"Worked extensively with Python in several projects.","Has no knowledge of Python",contradiction
+"Worked extensively with Metasploit in several projects.","Knows Metasploit",neutral
+"Worked extensively with Angular in several projects.","Knows Angular",neutral
+"Worked extensively with Cypress in several projects.","Has no knowledge of Cypress",contradiction
+"Worked extensively with PyTorch in several projects.","Knows PyTorch",entailment
+"Worked extensively with Xcode in several projects.","Knows Xcode",entailment
+"Worked extensively with Kubernetes in several projects.","Knows Kubernetes",entailment
+"Worked extensively with Vue.js in several projects.","Knows Vue.js",neutral
+"Worked extensively with OAuth2 in several projects.","Has no knowledge of OAuth2",contradiction
+"Worked extensively with Express.js in several projects.","Has no knowledge of Express.js",contradiction
+"Worked extensively with Kubernetes in several projects.","Has no knowledge of Kubernetes",contradiction
+"Worked extensively with TensorFlow in several projects.","Knows TensorFlow",entailment
+"Worked extensively with Hadoop in several projects.","Knows Hadoop",neutral
+"Worked extensively with TypeScript in several projects.","Knows TypeScript",neutral
+"Worked extensively with Swift in several projects.","Has no knowledge of Swift",contradiction
+"Worked extensively with JWT in several projects.","Knows JWT",neutral
+"Worked extensively with Java in several projects.","Has no knowledge of Java",contradiction
+"Worked extensively with Sass in several projects.","Knows Sass",entailment
+"Worked extensively with C# in several projects.","Has no knowledge of C#",contradiction
+"Worked extensively with Angular in several projects.","Has no knowledge of Angular",contradiction
+"Worked extensively with Swift in several projects.","Has no knowledge of Swift",contradiction
+"Worked extensively with FastAPI in several projects.","Knows FastAPI",entailment
+"Worked extensively with TensorFlow in several projects.","Knows TensorFlow",entailment
+"Worked extensively with XGBoost in several projects.","Knows XGBoost",neutral
+"Worked extensively with Sass in several projects.","Knows Sass",neutral
+"Worked extensively with Cypress in several projects.","Knows Cypress",neutral
+"Worked extensively with Jenkins in several projects.","Knows Jenkins",entailment
+"Worked extensively with Python in several projects.","Has no knowledge of Python",contradiction
+"Worked extensively with Angular in several projects.","Has no knowledge of Angular",contradiction
+"Worked extensively with Python in several projects.","Has no knowledge of Python",contradiction
+"Worked extensively with Rust in several projects.","Knows Rust",neutral
+"Worked extensively with OAuth2 in several projects.","Has no knowledge of OAuth2",contradiction
+"Worked extensively with TypeScript in several projects.","Has no knowledge of TypeScript",contradiction
+"Worked extensively with Xcode in several projects.","Has no knowledge of Xcode",contradiction
+"Worked extensively with Python in several projects.","Knows Python",entailment
+"Worked extensively with Apache Spark in several projects.","Has no knowledge of Apache Spark",contradiction
+"Worked extensively with XGBoost in several projects.","Knows XGBoost",entailment
+"Worked extensively with OWASP ZAP in several projects.","Knows OWASP ZAP",entailment
+"Worked extensively with OWASP ZAP in several projects.","Knows OWASP ZAP",entailment
+"Worked extensively with Rust in several projects.","Knows Rust",neutral
+"Worked extensively with Kafka in several projects.","Knows Kafka",neutral
+"Worked extensively with Swift in several projects.","Knows Swift",entailment
+"Worked extensively with React in several projects.","Has no knowledge of React",contradiction
+"Worked extensively with NestJS in several projects.","Knows NestJS",neutral
+"Worked extensively with Express.js in several projects.","Knows Express.js",entailment
+"Worked extensively with Swift in several projects.","Knows Swift",entailment
+"Worked extensively with Python in several projects.","Knows Python",entailment
+"Worked extensively with Docker in several projects.","Knows Docker",neutral
+"Worked extensively with Airflow in several projects.","Knows Airflow",entailment
+"Worked extensively with Selenium in several projects.","Knows Selenium",entailment
+"Worked extensively with JWT in several projects.","Knows JWT",entailment
+"Worked extensively with Swift in several projects.","Knows Swift",entailment
+"Worked extensively with Swift in several projects.","Knows Swift",neutral
+"Worked extensively with TensorFlow in several projects.","Has no knowledge of TensorFlow",contradiction
+"Worked extensively with OWASP ZAP in several projects.","Has no knowledge of OWASP ZAP",contradiction
+"Worked extensively with Angular in several projects.","Has no knowledge of Angular",contradiction
+"Worked extensively with Vue.js in several projects.","Knows Vue.js",neutral
+"Worked extensively with JWT in several projects.","Knows JWT",neutral
+"Worked extensively with Python in several projects.","Knows Python",entailment
+"Worked extensively with JavaScript in several projects.","Knows JavaScript",entailment
+"Worked extensively with React in several projects.","Knows React",entailment
+"Worked extensively with Kafka in several projects.","Knows Kafka",entailment
+"Worked extensively with Express.js in several projects.","Knows Express.js",entailment
+"Worked extensively with Java in several projects.","Knows Java",entailment
+"Worked extensively with Tailwind CSS in several projects.","Has no knowledge of Tailwind CSS",contradiction
+"Worked extensively with Python in several projects.","Has no knowledge of Python",contradiction
+"Worked extensively with Flutter in several projects.","Has no knowledge of Flutter",contradiction
+"Worked extensively with XGBoost in several projects.","Knows XGBoost",neutral
+"Worked extensively with TypeScript in several projects.","Knows TypeScript",entailment
+"Worked extensively with Jenkins in several projects.","Knows Jenkins",neutral
+"Worked extensively with Go in several projects.","Has no knowledge of Go",contradiction
+"Worked extensively with TensorFlow in several projects.","Knows TensorFlow",neutral
+"Worked extensively with React in several projects.","Knows React",neutral
+"Worked extensively with Cypress in several projects.","Has no knowledge of Cypress",contradiction
+"Worked extensively with PyTorch in several projects.","Knows PyTorch",entailment
+"Worked extensively with React in several projects.","Knows React",entailment
+"Worked extensively with Docker in several projects.","Knows Docker",neutral
+"Worked extensively with Cypress in several projects.","Knows Cypress",neutral
+"Worked extensively with Flutter in several projects.","Knows Flutter",neutral
+"Worked extensively with Flutter in several projects.","Knows Flutter",neutral
+"Worked extensively with JavaScript in several projects.","Knows JavaScript",entailment
+"Worked extensively with FastAPI in several projects.","Knows FastAPI",neutral
+"Worked extensively with Java in several projects.","Knows Java",entailment
+"Worked extensively with Vue.js in several projects.","Has no knowledge of Vue.js",contradiction
+"Worked extensively with Cypress in several projects.","Has no knowledge of Cypress",contradiction
+"Worked extensively with Terraform in several projects.","Knows Terraform",neutral
+"Worked extensively with PyTorch in several projects.","Knows PyTorch",neutral
+"Worked extensively with Selenium in several projects.","Has no knowledge of Selenium",contradiction
+"Worked extensively with React in several projects.","Has no knowledge of React",contradiction
+"Worked extensively with Express.js in several projects.","Knows Express.js",neutral
+"Worked extensively with Metasploit in several projects.","Has no knowledge of Metasploit",contradiction
+"Worked extensively with Selenium in several projects.","Knows Selenium",entailment
+"Worked extensively with Vue.js in several projects.","Has no knowledge of Vue.js",contradiction
+"Worked extensively with Metasploit in several projects.","Knows Metasploit",neutral
+"Worked extensively with Xcode in several projects.","Has no knowledge of Xcode",contradiction
+"Worked extensively with Java in several projects.","Knows Java",entailment
+"Worked extensively with Apache Spark in several projects.","Knows Apache Spark",neutral
+"Worked extensively with OWASP ZAP in several projects.","Knows OWASP ZAP",neutral
+"Worked extensively with Go in several projects.","Has no knowledge of Go",contradiction
+"Worked extensively with C# in several projects.","Knows C#",neutral
+"Worked extensively with Express.js in several projects.","Has no knowledge of Express.js",contradiction
+"Worked extensively with Vue.js in several projects.","Knows Vue.js",entailment
+"Worked extensively with Cypress in several projects.","Has no knowledge of Cypress",contradiction
+"Worked extensively with Java in several projects.","Knows Java",entailment
+"Worked extensively with Go in several projects.","Knows Go",entailment
+"Worked extensively with Tailwind CSS in several projects.","Has no knowledge of Tailwind CSS",contradiction
+"Worked extensively with Kubernetes in several projects.","Has no knowledge of Kubernetes",contradiction
+"Worked extensively with Xcode in several projects.","Knows Xcode",entailment
+"Worked extensively with Docker in several projects.","Knows Docker",neutral
+"Worked extensively with JWT in several projects.","Has no knowledge of JWT",contradiction
+"Worked extensively with Xcode in several projects.","Knows Xcode",neutral
+"Worked extensively with Kafka in several projects.","Knows Kafka",neutral
+"Worked extensively with Jenkins in several projects.","Knows Jenkins",neutral
+"Worked extensively with Tailwind CSS in several projects.","Has no knowledge of Tailwind CSS",contradiction
+"Worked extensively with Rust in several projects.","Knows Rust",neutral
+"Worked extensively with Kafka in several projects.","Knows Kafka",neutral
+"Worked extensively with Java in several projects.","Knows Java",entailment
+"Worked extensively with JWT in several projects.","Knows JWT",entailment
+"Worked extensively with Hadoop in several projects.","Knows Hadoop",entailment
+"Worked extensively with Python in several projects.","Knows Python",entailment
+"Worked extensively with Java in several projects.","Knows Java",neutral
+"Worked extensively with OAuth2 in several projects.","Has no knowledge of OAuth2",contradiction
+"Worked extensively with Python in several projects.","Has no knowledge of Python",contradiction
+"Worked extensively with Selenium in several projects.","Has no knowledge of Selenium",contradiction
+"Worked extensively with OWASP ZAP in several projects.","Knows OWASP ZAP",neutral
+"Worked extensively with PyTorch in several projects.","Knows PyTorch",neutral
+"Worked extensively with Angular in several projects.","Has no knowledge of Angular",contradiction
+"Worked extensively with FastAPI in several projects.","Has no knowledge of FastAPI",contradiction
+"Worked extensively with Flutter in several projects.","Knows Flutter",neutral
+"Worked extensively with Xcode in several projects.","Has no knowledge of Xcode",contradiction
+"Worked extensively with Cypress in several projects.","Knows Cypress",neutral
+"Worked extensively with Sass in several projects.","Has no knowledge of Sass",contradiction
+"Worked extensively with Sass in several projects.","Knows Sass",neutral
+"Worked extensively with Flutter in several projects.","Has no knowledge of Flutter",contradiction
+"Worked extensively with Cypress in several projects.","Has no knowledge of Cypress",contradiction
+"Worked extensively with Kubernetes in several projects.","Knows Kubernetes",entailment
+"Worked extensively with Metasploit in several projects.","Knows Metasploit",neutral
+"Worked extensively with JWT in several projects.","Knows JWT",neutral
+"Worked extensively with Tailwind CSS in several projects.","Knows Tailwind CSS",entailment
+"Worked extensively with Hadoop in several projects.","Has no knowledge of Hadoop",contradiction
+"Worked extensively with Metasploit in several projects.","Knows Metasploit",neutral
+"Worked extensively with JavaScript in several projects.","Has no knowledge of JavaScript",contradiction
+"Worked extensively with OAuth2 in several projects.","Knows OAuth2",neutral
+"Worked extensively with Docker in several projects.","Knows Docker",neutral
+"Worked extensively with Go in several projects.","Has no knowledge of Go",contradiction
+"Worked extensively with Hadoop in several projects.","Has no knowledge of Hadoop",contradiction
+"Worked extensively with Go in several projects.","Knows Go",entailment
+"Worked extensively with Airflow in several projects.","Knows Airflow",entailment
+"Worked extensively with Cypress in several projects.","Knows Cypress",neutral
+"Worked extensively with Hadoop in several projects.","Knows Hadoop",neutral
+"Worked extensively with JWT in several projects.","Knows JWT",neutral
+"Worked extensively with Swift in several projects.","Knows Swift",entailment
+"Worked extensively with Kafka in several projects.","Has no knowledge of Kafka",contradiction
+"Worked extensively with Sass in several projects.","Knows Sass",entailment
+"Worked extensively with Cypress in several projects.","Knows Cypress",entailment
+"Worked extensively with JavaScript in several projects.","Has no knowledge of JavaScript",contradiction
+"Worked extensively with Selenium in several projects.","Has no knowledge of Selenium",contradiction
+"Worked extensively with Docker in several projects.","Has no knowledge of Docker",contradiction
+"Worked extensively with NestJS in several projects.","Knows NestJS",entailment
+"Worked extensively with Airflow in several projects.","Has no knowledge of Airflow",contradiction
+"Worked extensively with Cypress in several projects.","Knows Cypress",entailment
+"Worked extensively with OAuth2 in several projects.","Knows OAuth2",entailment
+"Worked extensively with Selenium in several projects.","Knows Selenium",entailment
+"Worked extensively with Tailwind CSS in several projects.","Has no knowledge of Tailwind CSS",contradiction
+"Worked extensively with JavaScript in several projects.","Has no knowledge of JavaScript",contradiction
+"Worked extensively with XGBoost in several projects.","Knows XGBoost",entailment
+"Worked extensively with JWT in several projects.","Knows JWT",neutral
+"Worked extensively with XGBoost in several projects.","Has no knowledge of XGBoost",contradiction
+"Worked extensively with Metasploit in several projects.","Has no knowledge of Metasploit",contradiction
+"Worked extensively with Apache Spark in several projects.","Knows Apache Spark",entailment
+"Worked extensively with Rust in several projects.","Has no knowledge of Rust",contradiction
+"Worked extensively with Metasploit in several projects.","Has no knowledge of Metasploit",contradiction
+"Worked extensively with OWASP ZAP in several projects.","Knows OWASP ZAP",neutral
+"Worked extensively with XGBoost in several projects.","Knows XGBoost",entailment
+"Worked extensively with FastAPI in several projects.","Has no knowledge of FastAPI",contradiction
+"Worked extensively with Flutter in several projects.","Has no knowledge of Flutter",contradiction
+"Worked extensively with Scikit-learn in several projects.","Has no knowledge of Scikit-learn",contradiction
+"Worked extensively with Selenium in several projects.","Has no knowledge of Selenium",contradiction
+"Worked extensively with Java in several projects.","Has no knowledge of Java",contradiction
+"Worked extensively with React in several projects.","Has no knowledge of React",contradiction
+"Worked extensively with Docker in several projects.","Knows Docker",neutral
+"Worked extensively with TensorFlow in several projects.","Has no knowledge of TensorFlow",contradiction
+"Worked extensively with Express.js in several projects.","Knows Express.js",neutral
+"Worked extensively with Xcode in several projects.","Has no knowledge of Xcode",contradiction
+"Worked extensively with OAuth2 in several projects.","Knows OAuth2",neutral
+"Worked extensively with Tailwind CSS in several projects.","Knows Tailwind CSS",entailment
+"Worked extensively with TensorFlow in several projects.","Knows TensorFlow",entailment
+"Worked extensively with XGBoost in several projects.","Knows XGBoost",neutral
+"Worked extensively with Sass in several projects.","Knows Sass",entailment
+"Worked extensively with Docker in several projects.","Has no knowledge of Docker",contradiction
+"Worked extensively with Cypress in several projects.","Has no knowledge of Cypress",contradiction
+"Worked extensively with Vue.js in several projects.","Has no knowledge of Vue.js",contradiction
+"Worked extensively with NestJS in several projects.","Knows NestJS",neutral
+"Worked extensively with OAuth2 in several projects.","Knows OAuth2",entailment
+"Worked extensively with TypeScript in several projects.","Knows TypeScript",entailment
+"Worked extensively with JavaScript in several projects.","Knows JavaScript",neutral
+"Worked extensively with Express.js in several projects.","Knows Express.js",neutral
+"Worked extensively with Selenium in several projects.","Knows Selenium",entailment
+"Worked extensively with Metasploit in several projects.","Knows Metasploit",entailment
+"Worked extensively with Airflow in several projects.","Has no knowledge of Airflow",contradiction
+"Worked extensively with Kubernetes in several projects.","Knows Kubernetes",entailment
+"Worked extensively with XGBoost in several projects.","Knows XGBoost",neutral
+"Worked extensively with Sass in several projects.","Knows Sass",entailment
+"Worked extensively with Angular in several projects.","Knows Angular",entailment
+"Worked extensively with Metasploit in several projects.","Knows Metasploit",neutral
+"Worked extensively with TensorFlow in several projects.","Knows TensorFlow",entailment
+"Worked extensively with OAuth2 in several projects.","Has no knowledge of OAuth2",contradiction
+"Worked extensively with Docker in several projects.","Knows Docker",entailment
+"Worked extensively with Flutter in several projects.","Knows Flutter",entailment
+"Worked extensively with Kafka in several projects.","Has no knowledge of Kafka",contradiction
+"Worked extensively with Scikit-learn in several projects.","Knows Scikit-learn",neutral
+"Worked extensively with FastAPI in several projects.","Knows FastAPI",neutral
+"Worked extensively with Scikit-learn in several projects.","Knows Scikit-learn",neutral
+"Worked extensively with TensorFlow in several projects.","Has no knowledge of TensorFlow",contradiction
+"Worked extensively with OWASP ZAP in several projects.","Knows OWASP ZAP",entailment
+"Worked extensively with TypeScript in several projects.","Has no knowledge of TypeScript",contradiction
+"Worked extensively with Kafka in several projects.","Knows Kafka",entailment
+"Worked extensively with Kubernetes in several projects.","Knows Kubernetes",neutral
+"Worked extensively with Kubernetes in several projects.","Knows Kubernetes",neutral
+"Worked extensively with Apache Spark in several projects.","Has no knowledge of Apache Spark",contradiction
+"Worked extensively with Cypress in several projects.","Knows Cypress",entailment
+"Worked extensively with Vue.js in several projects.","Has no knowledge of Vue.js",contradiction
+"Worked extensively with Java in several projects.","Knows Java",neutral
+"Worked extensively with TensorFlow in several projects.","Knows TensorFlow",entailment
+"Worked extensively with Hadoop in several projects.","Knows Hadoop",entailment
+"Worked extensively with Airflow in several projects.","Has no knowledge of Airflow",contradiction
+"Worked extensively with XGBoost in several projects.","Knows XGBoost",neutral
+"Worked extensively with OWASP ZAP in several projects.","Has no knowledge of OWASP ZAP",contradiction
