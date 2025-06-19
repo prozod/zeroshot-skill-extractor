@@ -20,11 +20,13 @@ A Python tool for extracting skills, predicting roles, and analyzing experience 
 1. Clone the repo:
    ```bash
    git clone https://github.com/yourusername/zeroshot-skill-extractor.git
-   cd zeroshot-skill-extractor```
+   cd zeroshot-skill-extractor
+   ```
 
 2. Install dependencies:
     ```bash
-        pip install -r requirements.txt```
+        pip install -r requirements.txt
+     ```
 
 3. (Optional) Set up your RapidAPI LinkedIn key for the Streamlit UI.
 
@@ -47,12 +49,14 @@ A Python tool for extracting skills, predicting roles, and analyzing experience 
 
 #### Command-line
 ```bash
-    python3 src/script.py <path-to-pdf>```
+    python3 src/script.py <path-to-pdf>
+```
 - Processes a hardcoded PDF and outputs skills, role prediction, and other details. Results are saved as JSON in the root directory.
 
 ##### Streamlit UI
 ```bash
-    streamlit run src/app.py```
+    streamlit run src/app.py
+```
 - Upload a PDF resume.
 - Extract skills and roles.
 - Search relevant jobs tailored to your skills (requires RapidAPI LinkedIn key in `.env` file or just configure your own and modify `app.py`)
@@ -65,4 +69,5 @@ Customize model settings in ModelConfig. The extractor loads SpaCy models and ze
 #### Updating requirements
 I'm using `pipreqs` to get rid of all the fluff dependencies, whenever you install a dependency and wanna update the requirements, run:
 ```bash
-    pipreqs ./src --force --encoding=utf-8 --savepath=requirements.txt```
+    pipreqs ./src --force --encoding=utf-8 --savepath=requirements.txt
+```
