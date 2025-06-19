@@ -23,12 +23,14 @@ A Python tool for extracting skills, predicting roles, and analyzing experience 
    cd zeroshot-skill-extractor
    ```
 
-2. Install dependencies:
+2. Make sure you have a HuggingFace Access Token (from your HF account) and that you log in to be able to use the transformers and datasets *(personally, I'm using the `huggingface-cli login` command)*
+
+3. Install dependencies:
     ```bash
         pip install -r requirements.txt
      ```
 
-3. (Optional) Set up your RapidAPI LinkedIn key for the Streamlit UI.
+4. (Optional) Set up your RapidAPI LinkedIn key for the Streamlit UI.
 
 ## Training the NLI for resume skills
 
@@ -55,7 +57,8 @@ A Python tool for extracting skills, predicting roles, and analyzing experience 
 
 ##### Streamlit UI
 ```bash
-    streamlit run src/app.py
+    cd src
+    streamlit run app.py
 ```
 - Upload a PDF resume.
 - Extract skills and roles.
@@ -71,3 +74,6 @@ I'm using `pipreqs` to get rid of all the fluff dependencies, whenever you insta
 ```bash
     pipreqs ./src --force --encoding=utf-8 --savepath=requirements.txt
 ```
+
+## Short demo
+<iframe width="560" height="315" src="https://www.youtube.com/embed/meRzuvFx1VY?si=ypkcVru0Y0aTep2X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
