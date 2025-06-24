@@ -186,6 +186,8 @@ def main():
     config = ModelConfig.get_accurate_config()
     extractor = ResumeSkillExtractor(config=config)
     results = extractor.process_resume(pdf)
+    print("\n======= PREDICTED ROLE =======")
+    print(f"{results['predicted_role']['predicted_role']}")
 
     print("\n======= DETAILED SKILLS =======")
     for skill_info in results["skills"]["detailed_skills"]:
