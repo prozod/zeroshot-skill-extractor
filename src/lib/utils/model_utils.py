@@ -1,6 +1,3 @@
-"""
-Model utilities for loading and managing ML models
-"""
 import logging
 import torch
 from typing import Any, Optional
@@ -12,8 +9,6 @@ logger = logging.getLogger(__name__)
 
 
 class ModelManager:
-    """Manages loading and caching of ML models"""
-
     def __init__(self):
         self._models = {}
         self._nlp_model = None
@@ -26,7 +21,6 @@ class ModelManager:
             return False
 
     def load_spacy_model(self, model_name: str = "en_core_web_sm") -> spacy.Language:
-        """Load and cache spaCy model"""
         if self._nlp_model is None:
             try:
                 self._nlp_model = spacy.load(model_name)
@@ -43,7 +37,6 @@ class ModelManager:
         use_gpu: bool = True,
         cache_key: Optional[str] = None
     ) -> Any:
-        """Load and cache zero-shot classification model"""
         if cache_key is None:
             cache_key = f"zsl_{model_name}"
 
@@ -70,13 +63,11 @@ class ModelManager:
         return self._models.get(cache_key)
 
     def clear_cache(self):
-        """Clear model cache"""
         self._models.clear()
         self._nlp_model = None
         logger.info("Model cache cleared")
 
     def get_cache_info(self) -> dict:
-        """Get information about cached models"""
         return {
             "cached_models": list(self._models.keys()),
             "spacy_loaded": self._nlp_model is not None,
@@ -93,8 +84,6 @@ def get_model_manager() -> ModelManager:
 
 
 class StopWordsManager:
-    """Manages stop words for text processing"""
-
     def __init__(self):
         self._stop_words = None
 
@@ -133,5 +122,4 @@ stop_words_manager = StopWordsManager()
 
 
 def get_stop_words() -> set:
-    """Get English stop words"""
     return stop_words_manager.get_stop_words()

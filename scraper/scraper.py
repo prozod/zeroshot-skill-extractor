@@ -4,14 +4,14 @@ import json
 from linkedin_jobs_scraper import LinkedinScraper
 from linkedin_jobs_scraper.events import Events, EventData, EventMetrics
 from linkedin_jobs_scraper.query import Query, QueryOptions, QueryFilters
-from linkedin_jobs_scraper.filters import RelevanceFilters, TimeFilters
+from linkedin_jobs_scraper.filters import RelevanceFilters, TimeFilters, OnSiteOrRemoteFilters
 
 
 # logging
 logging.basicConfig(level=logging.INFO)
 
 # CLI arguments
-parser = argparse.ArgumentParser(description='LinkedIn Job Scraper')
+parser = argparse.ArgumentParser(description='LinkedIn job scraper')
 parser.add_argument('--query', type=str, required=True,
                     help='Job title to search for')
 parser.add_argument('--location', type=str, nargs='+', required=True,

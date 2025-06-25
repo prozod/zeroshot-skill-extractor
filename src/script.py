@@ -96,18 +96,20 @@ class ResumeSkillExtractor:
     def hybrid_skill_extraction(self, text: str) -> Dict:
         return self.hybrid_extractor.extract(text)
 
-    def classify_role(self, text: str) -> Dict:
-        """Classify the target role using zero-shot classification"""
+    def classify_role(self, text: str) -> Dict:  # ZSL classification
         candidate_roles = [
             "Web Developer",
             "Frontend Developer",
             "Backend Developer",
             "Frontend Engineer",
             "Backend Engineer",
+            "Cloud Developer",
             "SysAdmin",
+            "System Engineer",
+            "System Administrator",
             "Cloud R&D Engineer",
             "Full Stack Developer",
-            "Data Scientist",
+            "Data Science",
             "Machine Learning Engineer",
             "AI Engineer",
             "Artificial Intelligence Engineer",
@@ -126,6 +128,7 @@ class ResumeSkillExtractor:
             "Platform Engineer",
             "Data Engineer",
             "Site Reliability Engineer"
+            "SRE",
             "Cloud Architect",
             "MLOps",
             "Prompt Engineer",
@@ -133,7 +136,7 @@ class ResumeSkillExtractor:
             "Web3 Developer"
         ]
 
-        text_sample = text[:5000]
+        text_sample = text[50:2500]
 
         try:
             result = self.role_classifier(text_sample, candidate_roles)
@@ -154,7 +157,6 @@ class ResumeSkillExtractor:
             }
 
     def extract_experience_years(self, text: str) -> List[Dict]:
-        """Extract years of experience using regex patterns"""
         patterns = [
             r"(\d+)\+?\s*years?\s*(?:of\s*)?experience",
             r"(\d+)\+?\s*years?\s*in",
@@ -178,7 +180,6 @@ class ResumeSkillExtractor:
         return experiences
 
     def process_resume(self, pdf_path: str) -> Dict:
-        """Main processing function"""
         logger.info(f"Processing resume: {pdf_path}")
 
         text = self.text_extractor.extract_from_pdf(pdf_path)
@@ -205,7 +206,6 @@ class ResumeSkillExtractor:
         return results
 
     def save_results(self, results: Dict, output_path: str):
-        """Save results to JSON file"""
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(results, f, indent=4, default=str, ensure_ascii=False)
         logger.info(f"Results saved to {output_path}")
@@ -242,12 +242,22 @@ def main():
 
     extractor.save_results(results, "resume_analysis_zsl_results.json")
 
+    # first skills by matches descending, then by confidence descending
+    # i use this to append them to the predicted role as "machine learning engineer pytorch pandas"
+    top_skills = sorted(
+        results["skills"]["detailed_skills"],
+        key=lambda x: (-x.get("matches", 0), -x.get("confidence", 0.0))
+    )[:2]
+
+    top_skill_names = [skill["skill"] for skill in top_skills]
+    extended_predicted_role = predicted_role + " " + " ".join(top_skill_names)
+
     # scraper python interpreter from its own virtual env
-    scraper_venv_python = "/home/prozod/dev/aiml/zeroshot-skill-extractor/scraper/scraper_venv/bin/python"
+    scraper_venv_python = "scraper/scraper_venv/bin/python"
 
     try:
         run_retrieve_cookie_and_scraper(
-            scraper_venv_python, predicted_role, location="Romania")
+            scraper_venv_python, extended_predicted_role, location="Romania")
     except subprocess.CalledProcessError as e:
         print(f"[ERROR] Failed to run scraper: {e}")
         sys.exit(1)

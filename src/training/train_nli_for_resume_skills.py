@@ -11,6 +11,8 @@ from datasets import Dataset
 from pathlib import Path
 import evaluate
 
+torch.cuda.empty_cache()
+
 output_path = Path(__file__).parent.resolve() / \
     "./skill_extractor_zsl_model"
 output_path = output_path.resolve()
@@ -21,12 +23,13 @@ dataset_path = dataset_path.resolve()
 
 # === CONFIG ===
 MODEL_NAME = "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli"
+# MODEL_NAME = "facebook/bart-large-mnli" # moare GPU la asta
 DATA_PATH = dataset_path
 OUTPUT_DIR = output_path
 LABEL2ID = {"entailment": 0, "neutral": 1, "contradiction": 2}
 ID2LABEL = {v: k for k, v in LABEL2ID.items()}
 BATCH_SIZE = 16
-EPOCHS = 8
+EPOCHS = 10
 
 # === LOAD MODEL + TOKENIZER ===
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)

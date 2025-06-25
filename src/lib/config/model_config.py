@@ -17,11 +17,12 @@ class ModelConfig:
     # role_classifier_model: str = "facebook/bart-large-mnli"
     role_classifier_model: str = str(model_path)
     # skill_classifier_model: str = "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli"
-    skill_classifier_model: str = str(model_path)
+    # skill_classifier_model: str = str(model_path)
+    skill_classifier_model: str = "facebook/bart-large-mnli"
 
     # processing params
     confidence_threshold: float = 0.85
-    zsl_batch_size: int = 16
+    zsl_batch_size: int = 8
     text_chunk_size: int = 400
 
     # device settings

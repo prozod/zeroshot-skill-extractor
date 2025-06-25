@@ -108,14 +108,14 @@ class TextProcessor:
         """Create regex patterns for matching skill in text"""
         skill_lower = skill.lower()
 
-        # handle ambiguous short skills
         if skill_lower == 'c':
-            return [r'\b[cC]\b']
+            return [r'(?<!\w)[cC](?!\w)']
         elif skill_lower == 'r':
-            return [r'\b[rR]\b']
-        elif skill_lower in ['c#', 'c++']:
-            escaped = re.escape(skill_lower)
-            return [fr'\b{escaped}\b']
+            return [r'(?<!\w)[rR](?!\w)']
+        elif skill_lower == 'c#':
+            return [r'(?<!\w)[cC]\#(?!\w)']
+        elif skill_lower == 'c++':
+            return [r'(?<!\w)[cC]\+\+(?!\w)']
 
         normalized = self.normalize_skill_text(skill)
         return [rf'(?<![\w+#]){normalized}(?![\w+#])']
