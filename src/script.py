@@ -1,9 +1,10 @@
 import re
+import subprocess
 import sys
+import os
 import json
 import logging
 from typing import List, Dict
-from pathlib import Path
 from lib.utils.model_utils import ModelManager
 from lib.config.skill_categories import SkillCategories
 from lib.config.model_config import ModelConfig
@@ -13,6 +14,41 @@ from lib.extractors.skill_extractor import RuleBasedSkillExtractor, ZeroShotSkil
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+
+def run_retrieve_cookie_and_scraper(scraper_venv_python, query, location):
+    subprocess.run(
+        [scraper_venv_python, "./scraper/retrieve_cookie.py"], check=True)
+
+    with open("li_at.txt", "r") as f:
+        li_at = f.read().strip()
+
+    env = os.environ.copy()
+    env["LI_AT_COOKIE"] = li_at
+    subprocess.run(
+        [scraper_venv_python, "./scraper/scraper.py",
+            "--query", query, "--location", location],
+        env=env,
+        check=True
+    )
+
+
+def print_jobs_from_json(json_path):
+    with open(json_path, "r", encoding="utf-8") as f:
+        jobs = json.load(f)
+
+    print("\n======= JOB LISTINGS =======")
+    for i, job in enumerate(jobs, 1):
+        print(f"{i}. {job.get('title', 'No Title')} at {
+              job.get('company', 'No Company')}")
+        print(f"   Location: {job.get('place', 'Unknown')}")
+        print(f"   Date: {job.get('date', 'Unknown')}")
+        print(f"   Link: {job.get('link', 'No Link')}")
+        description = job.get('description', '').strip()
+        if description:
+            print(f"   Description: {description[:200]}{
+                  '...' if len(description) > 200 else ''}")
+        print("-" * 40)
 
 
 class ResumeSkillExtractor:
@@ -97,8 +133,7 @@ class ResumeSkillExtractor:
             "Web3 Developer"
         ]
 
-        # Take a representative sample of the text
-        text_sample = text[:3000]
+        text_sample = text[:5000]
 
         try:
             result = self.role_classifier(text_sample, candidate_roles)
@@ -186,8 +221,9 @@ def main():
     config = ModelConfig.get_accurate_config()
     extractor = ResumeSkillExtractor(config=config)
     results = extractor.process_resume(pdf)
+    predicted_role = results['predicted_role']['predicted_role']
     print("\n======= PREDICTED ROLE =======")
-    print(f"{results['predicted_role']['predicted_role']}")
+    print(f"{predicted_role}")
 
     print("\n======= DETAILED SKILLS =======")
     for skill_info in results["skills"]["detailed_skills"]:
@@ -205,6 +241,23 @@ def main():
     print(f"Rule-based detected: {stats['rule_based_count']}\n")
 
     extractor.save_results(results, "resume_analysis_zsl_results.json")
+
+    # scraper python interpreter from its own virtual env
+    scraper_venv_python = "/home/prozod/dev/aiml/zeroshot-skill-extractor/scraper/scraper_venv/bin/python"
+
+    try:
+        run_retrieve_cookie_and_scraper(
+            scraper_venv_python, predicted_role, location="Romania")
+    except subprocess.CalledProcessError as e:
+        print(f"[ERROR] Failed to run scraper: {e}")
+        sys.exit(1)
+
+    # once scraper is done, print the jobs
+    json_path = "linkedin_jobs.json"
+    if os.path.exists(json_path):
+        print_jobs_from_json(json_path)
+    else:
+        print(f"[ERROR] Jobs JSON file not found at {json_path}")
 
 
 if __name__ == "__main__":

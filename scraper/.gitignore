@@ -1,0 +1,14 @@
+.env
+scraper_venv/
+venv/
+env/
+__py_cache__
+*.py[cod]
+*$py.class
+
+# VS Code / IDE settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store

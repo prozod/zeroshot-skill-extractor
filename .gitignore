@@ -24,3 +24,5 @@ venv/
 # Various
 resume_analysis_zsl_results.json
 src/training/skill_extractor_zsl_model/
+li_at.txt
+linkedin_jobs.json

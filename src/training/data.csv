@@ -3,7 +3,7 @@ premise,hypothesis,label
 "Skilled in HTML, CSS, and React","Candidate has backend skills",contradiction
 "Worked with SQL and PostgreSQL","Candidate has database knowledge",entailment
 "Implemented CI/CD pipelines with Jenkins and GitHub Actions for microservices deployment.","This candidate works in DevOps.",entailment
-"Containerized applications using Docker and managed clusters via Kubernetes on AWS EKS.","This candidate is skilled in container orchestration and cloud.",entailment
+"Containerized applications using Docker and managed clusters via Kubernetes on AWS EKS.","This candidate is skilled in container orchestration, cloud and DevOps",entailment
 "Designed infrastructure as code using Terraform to provision AWS EC2, S3, RDS resources.","This candidate is experienced in cloud infrastructure.",entailment
 "Led frontend development with React and TypeScript, built reusable components.","This candidate is a frontend developer.",entailment
 "Built RESTful APIs and GraphQL endpoints using Node.js with Express.js.","This candidate works in backend development.",entailment
@@ -27,7 +27,7 @@ premise,hypothesis,label
 "I play guitar in a band every weekend.","This candidate is a backend developer.",contradiction
 "Organizes charity events using Excel spreadsheets.","This candidate works in cloud engineering.",neutral
 "Loves photography and travels to remote locations for inspiration.","This candidate specializes in data science.",contradiction
-"Built and deployed containerized applications using Docker and Kubernetes on GCP.","This candidate is skilled in container orchestration and cloud.",entailment
+"Built and deployed containerized applications using Docker and Kubernetes on GCP.","This candidate is skilled in container orchestration and cloud. Maybe DevOps",entailment
 "Developed a distributed system using Apache Kafka for real-time event streaming.","This candidate works in distributed systems.",entailment
 "Wrote automation scripts using Python and Bash to streamline DevOps tasks.","This candidate is experienced in DevOps scripting.",entailment
 "Configured and monitored AWS CloudWatch for system metrics.","This candidate is skilled in cloud monitoring.",entailment

@@ -11,8 +11,13 @@ A Python tool for extracting skills, predicting roles, and analyzing experience 
 - Extracts years of experience using regex patterns.
 - Provides detailed skill and extraction statistics.
 - Supports processing PDF resumes.
-- Includes a Streamlit UI for uploading resumes and searching relevant jobs via RapidAPI (LinkedIn key required).
+- Includes a Streamlit UI for uploading resumes and searching relevant jobs via a webscraper (LinkedIn credentials required).
 
+---
+## Directories
+- `scraper/` contains the cookie retrieval and web scraping of LiknedIn Job posts using Selenium
+- `training/` contains a small dataset for natural language inference for tech skills and roles.
+- `src/` contains the base (`script.py`), it's the script you need to run and a Streamlit interface (`app.py`)
 ---
 
 ## Installation
@@ -29,8 +34,6 @@ A Python tool for extracting skills, predicting roles, and analyzing experience 
     ```bash
         pip install -r requirements.txt
      ```
-
-4. (Optional) Set up your RapidAPI LinkedIn key for the Streamlit UI.
 
 ## Training the NLI for resume skills
 
@@ -76,4 +79,4 @@ I'm using `pipreqs` to get rid of all the fluff dependencies, whenever you insta
 ```
 
 ## Short demo
-[![Watch the demo](https://img.youtube.com/vi/meRzuvFx1VY/0.jpg)](https://www.youtube.com/watch?v=meRzuvFx1VY)
+[![Watch the demo](https://img.youtube.com/vi/izUvITahOV0/0.jpg)](https://www.youtube.com/watch?v=izUvITahOV0)

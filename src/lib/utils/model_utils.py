@@ -2,10 +2,12 @@
 Model utilities for loading and managing ML models
 """
 import logging
+import torch
 from typing import Any, Optional
 import spacy
 from transformers import pipeline
 
+torch.cuda.empty_cache()
 logger = logging.getLogger(__name__)
 
 
@@ -18,7 +20,6 @@ class ModelManager:
 
     def check_gpu_availability(self) -> bool:
         try:
-            import torch
             return torch.cuda.is_available()
         except ImportError:
             logger.warning("PyTorch not installed, using CPU")

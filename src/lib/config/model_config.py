@@ -14,7 +14,8 @@ class ModelConfig:
     spacy_model: str = "en_core_web_sm"
 
     # zero-shot classification models
-    role_classifier_model: str = "facebook/bart-large-mnli"
+    # role_classifier_model: str = "facebook/bart-large-mnli"
+    role_classifier_model: str = str(model_path)
     # skill_classifier_model: str = "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli"
     skill_classifier_model: str = str(model_path)
 
